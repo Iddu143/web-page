@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body >
+	<div id="imageChangerToText">
+	<img src="iddu.jpeg" id="imgimg" style="width :100px;height:93px;margin-bottom: -3px;">
+	</div>
+	<div id="imageChangerToText1">
+		
+	</div>
+	<h1>SPACE-X</h1><span id="lines" onclick="sideNavigation()" style="cursor: pointer">&#9776;</span>
+	<div id="div1">
+		<ul id="mainmenu">
+			<li><a href="#home" onclick="homeMenu()">Home</a>
+			</li>
+			<li><a href="#exam">Exam</a><span class="darrow">&#9660;</span>
+				<ul class="submenu1">
+					<li><a href="#" onclick="signupFormOpener()">signup</a>
+					</li>
+					<li><a href="#" onclick="loginFormOpener()">login</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#branch">Branch</a><span class="darrow">&#9660;</span>
+				<ul class="submenu1">
+					<li><a href="#">ECE</a>
+					</li>
+					<li><a href="#">CSE</a><span class="rarrow">&#9654;</span>
+						<ul class="submenu2">
+							<li><a href="#"  onclick="FacultyVisibility()">Faculty</a></li>
+							<li><a href="#" onclick="StudentVisibility()">Student</a></li>		
+						</ul>
+					</li>
+					<li><a href="#">MECH</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#contact" onclick="mapOpener()">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="div2">
+		<ul id="mainmenu-side">
+			<li><a href="#home" onclick="homeMenu()">Home</a>
+			</li>
+			<li><a href="#exam">Exam</a><span class="carrow">&#8249;</span>
+				<ul class="submenu1-side">
+					<li><a href="#" onclick="signupFormOpener()">signup</a>
+					</li>
+					<li><a href="#" onclick="loginFormOpener()">login</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#branch">Branch</a><span class="barrow">&#8249;</span>
+				<ul class="submenuX">
+					<li><a href="#">ECE</a>
+					</li>
+					<li><a href="#">CSE</a><span style="color :black" class="carrow">&#8249;</span>
+						<ul class="submenu2-side">
+							<li><a href="#" onclick="FacultyVisibility()">Faculty</a></li>
+							<li><a href="#" onclick="StudentVisibility()">Student</a></li>		
+						</ul>
+					</li>
+					<li><a href="#">MECH</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#contact" onclick="mapOpener()">Contact</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="divss" style="display: block;">
+		<div id="divss1">	
+			<input type="text" id="myInput" onkeyup="filtering()" placeholder="search for id...">
+			<ul id="mainsearch1">
+				<li><a href="#">N180674</a></li>
+				<li><a href="#">N180674</a></li>
+				<li><a href="#">N181674</a></li>
+				<li><a href="#">N182674</a></li>
+				<li><a href="#">N183674</a></li>
+				<li><a href="#">N183674</a></li>
+				<li><a href="#">N184674</a></li>
+				<li><a href="#">N184676</a></li>
+				<li><a href="#">N184671</a></li>
+				<li><a href="#">N180674</a></li>
+				<li><a href="#">N180674</a></li>
+				<li><a href="#">N181674</a></li>
+				<li><a href="#">N182674</a></li>
+				<li><a href="#">N183674</a></li>
+				<li><a href="#">N183674</a></li>
+				<li><a href="#">N184674</a></li>
+				<li><a href="#">N184676</a></li>
+				<li><a href="#">N184671</a></li>
+			</ul>
+		</div> 
+		<center>
+			<div id="divss2">
+				<img src="brahmi1.gif" width="100%" height="500px" id="slides">
+				<a class="prev" onclick="slideprev()">&#10094;</a>
+				<a class="next" onclick="slidenext()">&#10095;</a>
+			</div>
+		</center>
+		 <div id="divss3">
+		 	<h2 style="color:yellow">Notifications</h2>
+		 	<ul id="mainsearch2">
+				<li><a href="#">Branch selections</a></li>
+				<li><a href="#">Exam updates</a></li>
+				<li><a href="#">Time tables</a></li>
+				<li><a href="#">Weekends</a></li>
+				<li><a href="#">Notice board</a></li>
+				<li><a href="#">Mails</a></li>
+				<li><a href="#">Placements</a></li>
+				<li><a href="#">Companies</a></li>
+				<li><a href="#">Hiring Processing</a></li>
+				<li><a href="#">Technical process</a></li>
+				
+			</ul>
+		 </div>
+		<center>
+			<div>
+				<span class="dot" onclick="currentSlide(0)"></span>
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+			</div>
+		</center>
+	</div> 
+	<div id="map-division" style="position: static;margin-top: 40px; display: none;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.355798995545!2d80.82005117458311!3d16.792693303750163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675e5f312c661%3A0xab7189f421622491!2sIIIT%20Nuzvid%20Campus%2C%20Nuzividu%2C%20Andhra%20Pradesh%20521202!5e0!3m2!1sen!2sin!4v1657124738969!5m2!1sen!2sin" width="1355" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<div id="Student-validity" style="position: static;margin-top: 40px;">
+			<h2 id="Student-validity-h2">Student Login</h2>
+			<input type="text" name="Name" placeholder="Enter Valid ID number" id="sid-val" autocomplete="off"><br>
+			<input type="button" name="submit" value="submit" onclick="studentValid()">
+	</div>
+	<div id="Faculty-validity" style="position: static;margin-top: 40px;">
+			<h2 id="Faculty-validity-h2">Faculty Login</h2>
+			<input type="text" name="Name" placeholder="Enter Valid ID number" id="fid-val" autocomplete="off"><br>
+			<input type="button" name="submit" value="submit" onclick="FacultyValid()">
+	</div>
+	<div id="f-div1" style="display: none;position: static;margin-top: 60px;">	
+ 		<form action="/naveen.php" autocomplete="on" id="myForm">
+ 			<h2 id="f-h2">Form Validation</h2>
+
+			<input type="text" name="Name" placeholder="First Name" id="fname" oninput="getFullName()" required><br>
+			<input type="text" name="Name" placeholder="Last Name" id="lname" oninput="getFullName()" required><br>
+			<input type="text" name="Name" placeholder="Middle Name" id="mname"><br>
+
+
+			<!-- <button onclick="getFullName()" name="fullname" type="button" id="button2">Full Name</button> -->
+			
+			<input type="text" name="Name" placeholder="Full Name will be displayed here" id="fullname" ><br>
+
+			<input type="text" name="mail" placeholder="Email" id="mailid"><br>
+
+			<b>Select atleast two you liked</b><br>
+			<input type="checkbox" id="vehicle1" name="vehicle" value="Bike">Bike<br>
+		 	<input type="checkbox" id="vehicle2" name="vehicle" value="Car">Car<br>
+		 	<input type="checkbox" id="vehicle3" name="vehicle" value="Boat">Boat<br>
+			<select name="country" id="phno">
+				<option value="India" selected>+91</option>
+				<option value="America">+1</option>
+			</select>
+			<input type="text" id="country_data" name="cou" required><br>
+
+
+			<div class="fake-input">
+			    <input type="text" id="2" placeholder="Password">
+			    <img src="eye.png" id="f-img" width="22px" onclick="img2()">
+			</div>												
+			<b>Photo :</b> <input type="file" id="myFile" name="filename" >
+
+			<input type="date" name="dob" id="date"><br>
+			<p id="agePrinter" style="width :100px; height: 25px;"></p>
+			
+			
+			Hobbies : <input type="text" name="" id="add-first">
+			<!-- <button onclick="resetForm()" type="button" id="button1">Reset</button> -->
+			<button onclick="adder()" id="hobby" type="button">ADD</button>
+			<br>The Hobbies are:
+			<ul id="add-two">
+			</ul>
+			<input type="checkbox" id="agree" name="terms" value="terms" onclick="obeyTerms()"> I am entering correct details<br><br>
+			<button onclick="resetForm()" type="button" id="button1">Reset</button>
+			<input type="button" id="submitButton" value="Submit" onclick="return validate()" disabled>
+		</form>
+	</div>
+
+	<div id="login-validity" style="position: static;margin-top: 40px;">
+		<h2 id="login-validity-h2">Login</h2>
+		<input type="text" name="Name" placeholder="idris" id="lid-val" autocomplete="off"><br>
+		<!-- <input type="Password" name="pwd" placeholder="Enter Password" id="passcode"><br> -->
+
+	    <input type="text" id="21" placeholder="idris@1786">
+
+
+		<input type="button" name="submit" value="submit" onclick="loginValid()">
+	</div>
+<script type="text/javascript" src="script.js"></script>
+<footer>
+	<center><div class="footerdiv">
+	<p>Desined by Idris</p>
+	<p>Contact Details:4231-6376</p></center>
+</div>
+
+</footer>
+</body>
+</html>
